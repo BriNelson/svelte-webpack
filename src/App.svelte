@@ -48,7 +48,8 @@ todoList = [...todoList, {todo: newTodo, competed: false}]
 {#each todoList as item, index}
 
   <div class="d-flex flex-row list-group-item" class:status={item.competed}>
-    <div class="me-5" > {item.todo}</div><button type="button" class="btn btn-danger" on:click={()=>removeTodo(index)} >delete</button><button class='btn btn-success' on:click={()=>completeTodo(item)}>completed</button>
+    <div class="me-5" > {item.todo}<button type="button" class="btn btn-light">Edit</button>
+    </div><button type="button" class="btn btn-danger" on:click={()=>removeTodo(index)} >delete</button><button class='btn btn-success' on:click={()=>completeTodo(item)}>completed</button>
   </div>
 {/each}
 </div>

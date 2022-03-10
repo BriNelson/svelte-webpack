@@ -5,18 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode poroduction",
-    "dev": "webpack serve --open chrome"
+    "build": "webpack",
+    "dev": "webpack serve"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.17.5",
-    "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.16.11",
-    "babel-loader": "^8.2.3",
-    "css-loader": "^6.7.0",
-    "dotenv-webpack": "^7.1.0",
+    "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
@@ -26,6 +21,12 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.2",
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "popper": "^1.0.1",
+    "style-loader": "^3.3.1",
     "svelte": "^3.46.4"
   }
 }
