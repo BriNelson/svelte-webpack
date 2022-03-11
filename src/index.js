@@ -1,5 +1,9 @@
 import App from "./App.svelte";
 import _ from 'lodash';
+// importing my css
+import styles from "./styles.css"
+import img from "./todo-list-banner.jpeg"
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'bootstrap';

@@ -1,4 +1,16 @@
 <script>
+  import img from "./todo-list-banner.jpeg"
+  
+  function component() {
+  const element = document.createElement('div');
+
+  
+  element.innerHTML = _.join(['lodash js module', 'is being imported line 6 of app.svelte'], ' ');
+
+  return element;
+}
+
+document.body.appendChild(component());
 
   let newTodo = ''
   let todoList=[
@@ -29,7 +41,10 @@ todoList = [...todoList, {todo: newTodo, competed: false}]
     todoList = todoList
   }
 </script>
+<div class="appContainer">
+  
 <div class="container">
+  <img src="{img}" alt="banner">
 <form on:submit|preventDefault={handleClick}>
   <div class="row">
     <div class="col">
@@ -52,6 +67,7 @@ todoList = [...todoList, {todo: newTodo, competed: false}]
     </div><button type="button" class="btn btn-danger" on:click={()=>removeTodo(index)} >delete</button><button class='btn btn-success' on:click={()=>completeTodo(item)}>completed</button>
   </div>
 {/each}
+</div>
 </div>
 </div>
 

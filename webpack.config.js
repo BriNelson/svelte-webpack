@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+
 module.exports = {
   // This says to webpack that we are in development mode and write the code in webpack file in different way
   mode: "development",
@@ -14,7 +15,11 @@ module.exports = {
   },
   module: {
     rules: [
-      //Allows use of svelte
+      {
+        test: /\.(jpg|jpeg|png)$/,
+        type: 'asset/resource'
+      },
+
       {
         test: /\.svelte$/,
         use: {
